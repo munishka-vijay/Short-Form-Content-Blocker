@@ -1,7 +1,7 @@
 function blockShorts() {
     // Redirect if user is on a Shorts page
     if (window.location.href.includes("youtube.com/shorts")) {
-        window.location.href = "https://yourmindfulpage.com"; // Replace with your actual page URL
+        window.location.href = "https://munishka-vijay.github.io/Mindfulness-Pages/"; // Replace with your actual page URL
     }
 
     // Completely remove Shorts from the homepage feed
