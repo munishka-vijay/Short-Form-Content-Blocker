@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Short-Form Content Blocker",
+    "version": "1.0",
+    "description": "Blocks short-form videos like YouTube Shorts, Instagram Reels, and LinkedIn short videos.",
+    "permissions": ["scripting"],
+    "host_permissions": ["*://*.youtube.com/*", "*://*.instagram.com/*", "*://*.linkedin.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*", "*://*.instagram.com/*", "*://*.linkedin.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_title": "Short-Form Blocker"
+    }
+  }
+  
